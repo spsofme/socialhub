@@ -1,0 +1,95 @@
+:root {
+	--hub-blue: #2c7be5;
+	--hub-indigo: #727cf5;
+	--hub-purple: #6b5eae;
+	--hub-pink: #ff679b;
+	--hub-red: #e63757;
+	--hub-orange: #fd7e14;
+	--hub-yellow: #f5803e;
+	--hub-green: #00d27a;
+	--hub-teal: #02a8b5;
+	--hub-cyan: #27bcfd;
+	--hub-black: #000;
+	--hub-white: #fff;
+	--hub-gray: #748194;
+	--hub-gray-dark: #4d5969;
+	--hub-gray-black: #000;
+	--hub-gray-100: #f9fafd;
+	--hub-gray-200: #edf2f9;
+	--hub-gray-300: #d8e2ef;
+	--hub-gray-400: #b6c1d2;
+	--hub-gray-500: #9da9bb;
+	--hub-gray-600: #748194;
+	--hub-gray-700: #5e6e82;
+	--hub-gray-800: #4d5969;
+	--hub-gray-900: #344050;
+	--hub-gray-1000: #232e3c;
+	--hub-gray-1100: #0b1727;
+	--hub-gray-white: #fff;
+	--hub-primary: #2c7be5;
+	--hub-secondary: #748194;
+	--hub-success: #00d27a;
+	--hub-info: #27bcfd;
+	--hub-warning: #f5803e;
+	--hub-danger: #e63757;
+	--hub-light: #f9fafd;
+	--hub-dark: #0b1727;
+	--hub-primary-rgb: 44, 123, 229;
+	--hub-secondary-rgb: 116, 129, 148;
+	--hub-success-rgb: 0, 210, 122;
+	--hub-info-rgb: 39, 188, 253;
+	--hub-warning-rgb: 245, 128, 62;
+	--hub-danger-rgb: 230, 55, 87;
+	--hub-light-rgb: 249, 250, 253;
+	--hub-dark-rgb: 11, 23, 39;
+	--hub-white-rgb: 255, 255, 255;
+	--hub-black-rgb: 0, 0, 0;
+	--hub-body-color-rgb: 94, 110, 130;
+	--hub-body-bg-rgb: 237, 242, 249;
+	--hub-font-sans-serif: "Poppins", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	--hub-font-monospace: "SFMono-Regular", Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+	--hub-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
+	--hub-body-font-family: Open Sans, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+	--hub-body-font-size:1rem;
+	--hub-body-font-weight: 400;
+	--hub-body-line-height: 1.5;
+	--hub-body-color: #5e6e82;
+	--hub-body-bg: #edf2f9;
+	--hub-border-width: 1px;
+	--hub-border-style: solid;
+	--hub-border-color: var(--hub-border-color);
+	--hub-border-color-translucent: rgba(0, 0, 0, 0.175);
+	--hub-border-radius: 0.25rem;
+	--hub-border-radius-sm: 0.25rem;
+	--hub-border-radius-lg: 0.375rem;
+	--hub-border-radius-xl: 1rem;
+	--hub-border-radius-2xl: 2rem;
+	--hub-border-radius-pill: 50rem;
+	--hub-link-color: #2c7be5;
+	--hub-link-hover-color: #2362b7;
+	--hub-code-color: #ff679b;
+	--hub-highlight-bg: #fde6d8;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 1rem;
+	line-height: 1.5;
+	color: var(--hub-body-color);
+	background-color: var(--hub-body-bg);
+	height: 100vh;
+}
+
+#root {
+	display: grid;
+	grid-template-columns: 1fr 2fr 1fr;
+}
+
+#leftbar {
+	/* background-color: #fff; */
+	border-right: 1px solid #eee;
+}
+#rightbar {
+	/* background-color: #fff; */
+	border-right: 1px solid #eee;
+}
