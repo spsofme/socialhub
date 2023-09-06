@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import MainLayout from './layouts/MainLayout/Index'
 import './assets/css/style.css'
 import IndexMain from './pages/Main'
+import Error404 from './pages/Error/Error404'
 
 function App() {
   return (
@@ -13,6 +14,13 @@ function App() {
         <Route path="/" element={<MainLayout />}>
           <Route index={true} element={<IndexMain />} />
         </Route>
+        
+        {/* <Route path="/Error/">
+          <Route path="404" element={<Error404 />} />
+        </Route> */}
+
+        {/* 404 page */}
+        <Route path="*" element={<Error404 />} />
       </Routes>
     </BrowserRouter>
   )

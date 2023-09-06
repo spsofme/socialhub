@@ -7,7 +7,9 @@ const MainLayout = () => {
 	return (
 		<>
 			<LeftBar />
-			<Outlet />
+			<div id="content">
+				<Outlet />
+			</div>
 			<RightBar />
 		</>
 	)
