@@ -29,6 +29,8 @@ const LeftBar = () => {
 			}}>
 				<div>
 					<PageNavigate pageName="Ana sayfa" url="/" icon={home_icon} />
+					<PageNavigate pageName="Bildirimler" url="/notifications" icon={home_icon} />
+					<PageNavigate pageName="Mesajlar" url="/messages" icon={home_icon} />
 				</div>
 				<div>
 					<PageNavigate pageName="Profil" url="/profile" icon={avatar_icon} />
