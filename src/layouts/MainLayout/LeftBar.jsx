@@ -2,6 +2,9 @@ import { useNavigate } from "react-router-dom"
 import logo from '../../assets/images/logo.png'
 import home_icon from '../../assets/icons/home.svg'
 import avatar_icon from '../../assets/icons/avatar.svg'
+import message_icon from '../../assets/icons/message.svg'
+import notification_icon from '../../assets/icons/bell.svg'
+import pingmagnifying_glass_icon from '../../assets/icons/magnifying-glass.svg'
 
 const LeftBar = () => {
 	const navigate = useNavigate()
@@ -29,8 +32,9 @@ const LeftBar = () => {
 			}}>
 				<div>
 					<PageNavigate pageName="Ana sayfa" url="/" icon={home_icon} />
-					<PageNavigate pageName="Bildirimler" url="/notifications" icon={home_icon} />
-					<PageNavigate pageName="Mesajlar" url="/messages" icon={home_icon} />
+					<PageNavigate pageName="Bildirimler" url="/notifications" icon={notification_icon} />
+					<PageNavigate pageName="Mesajlar" url="/messages" icon={message_icon} />
+					<PageNavigate pageName="Ara" url="/search" icon={pingmagnifying_glass_icon} />
 				</div>
 				<div>
 					<PageNavigate pageName="Profil" url="/profile" icon={avatar_icon} />

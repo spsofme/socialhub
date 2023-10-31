@@ -193,7 +193,6 @@ body {
 	width: 100%;
 	outline: none;
 	padding: .5rem;
-	font-size: 1.2em;
 	color: var(--hub-gray-900);
 	border-style: solid;
 	border-width: 0px 0px 1px 0px;
@@ -312,6 +311,7 @@ body {
 	cursor: pointer;
 	text-decoration: none;
 }
+.post > .post-footer > .post-desc { font-size: .9em; }
 
 .profile {
 	width: 100%;
@@ -367,10 +367,35 @@ body {
 	color: var(--hub-gray-900);
 }
 
-.profile > .profile-content > .posts {
+/* .profile > .profile-content > .posts {
+	width: 100%;
 	display: grid;
-	grid-template-columns: repeat(3, 1fr);
+	grid-template-columns: repeat(3, auto);
+	gap: .2rem;
 }
+.profile > .profile-content > .posts > .post > img {
+	width: auto;
+} */
+.profile > .profile-content > .posts > .posts-row > .posts-col:hover {
+	cursor: pointer;
+	opacity: .8;
+}
+.profile > .profile-content > .posts > .posts-row {
+	display: flex;
+	flex-direction: row;
+	gap: .5rem;
+	margin-bottom: .5rem;
+}
+.profile > .profile-content > .posts > .posts-row > .posts-col {
+	width: 100%;
+}
+.profile > .profile-content > .posts > .posts-row > .posts-col > * {
+	width: 100%;
+	height: auto;
+	aspect-ratio: 1/1;
+}
+
+
 .profile > .profile-content > .no-post {
 	display: flex;
 	flex-direction: column;

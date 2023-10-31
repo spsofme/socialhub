@@ -1,10 +1,13 @@
 import React from 'react'
-import { useParams } from 'react-router-dom'
+import { useNavigate, useParams } from 'react-router-dom'
 import Card from '../../components/Card'
 import ping_icon from '../../assets/icons/ping.svg'
 
 const Profile = ({ match }) => {
 	const { username } = useParams()
+	const navigate = useNavigate()
+	var post = true
+
   return (
 		<Card>
 			<div className="profile">
@@ -36,12 +39,35 @@ const Profile = ({ match }) => {
 				</div>
 				<hr />
 				<div className="profile-content">
-					<div className="posts">
-					</div>
-					<div className="no-post">
-						<img src={ping_icon} alt="Post not found image" style={{ color: 'gray' }} />
-						<span>Bir şeyler paylaş</span>
-					</div>
+					{ post ?
+						<div className="posts">
+							<div className="posts-row">
+								<div className="posts-col" onClick={() => { navigate(`post/${1}`) }}><img src="https://picsum.photos/200/300" alt="" /></div>
+								<div className="posts-col" onClick={() => { navigate(`post/${1}`) }}><img src="https://picsum.photos/200/300" alt="" /></div>
+								<div className="posts-col" onClick={() => { navigate(`post/${1}`) }}><img src="https://picsum.photos/200/300" alt="" /></div>
+							</div>
+							<div className="posts-row">
+								<div className="posts-col" onClick={() => { navigate(`post/${1}`) }}><img src="https://picsum.photos/200/300" alt="" /></div>
+								<div className="posts-col" onClick={() => { navigate(`post/${1}`) }}><img src="https://picsum.photos/200/300" alt="" /></div>
+								<div className="posts-col" onClick={() => { navigate(`post/${1}`) }}><img src="https://picsum.photos/200/300" alt="" /></div>
+							</div>
+							<div className="posts-row">
+								<div className="posts-col" onClick={() => { navigate(`post/${1}`) }}><img src="https://picsum.photos/200/300" alt="" /></div>
+								<div className="posts-col" onClick={() => { navigate(`post/${1}`) }}><img src="https://picsum.photos/200/300" alt="" /></div>
+								<div className="posts-col" onClick={() => { navigate(`post/${1}`) }}><img src="https://picsum.photos/200/300" alt="" /></div>
+							</div>
+							<div className="posts-row">
+								<div className="posts-col" onClick={() => { navigate(`post/${1}`) }}><img src="https://picsum.photos/200/300" alt="" /></div>
+								<div className="posts-col" onClick={() => { navigate(`post/${1}`) }}><img src="https://picsum.photos/200/300" alt="" /></div>
+								<div className="posts-col" onClick={() => { navigate(`post/${1}`) }}><img src="https://picsum.photos/200/300" alt="" /></div>
+							</div>
+						</div>
+						:
+						<div className="no-post">
+							<img src={ping_icon} alt="Post not found image" style={{ color: 'gray' }} />
+							<span>Bir şeyler paylaş</span>
+						</div>
+					}
 				</div>
 			</div>
 		</Card>

@@ -28,7 +28,7 @@ const Post = ({id, username, desc, date}) => {
 					<img src={comment_icon} className='post-icon' alt="comment" />
 				</div>
 				<div className='post-user'>
-					<a className='post-user-username' href={`/user/${username}`}>{username}</a>
+					<a className='post-user-username' href={`/${username}`}>{username}</a>
 					<span className='post-upload-date'>{date}</span>
 				</div>
 				<div className='post-desc'>
